@@ -1,0 +1,164 @@
+/*全屏滚动样式*/
+.container{
+	position:relative;
+	overflow:hidden;
+}
+.container .hove:hover{
+	background-color:#fccf12;
+}
+.container>ul:nth-child(1)  li{
+	/*background:url(../img/banner01.jpg) no-repeat;*/
+	/*background:radial-gradient(#f64,transparent);*/
+	width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.container .bg{
+	background-color: black;
+}
+.container .bc{
+	background-color: red;
+}
+.container{
+	background:radial-gradient(#f64,transparent);
+}
+.container>ul:nth-child(2) li{
+	background-color:#ffffff;
+	width:15px;
+	height:15px;
+	margin:10px 0;
+	border-radius:50%;
+	cursor:pointer;
+}
+.container>ul:nth-child(2) .slt{
+	background-color:#fccf12;
+}
+/*--------头部*/
+.nav-fixed-top{
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+}
+.hc-navbox{
+	display:inline-block;
+}
+.hc-navbox a{
+	
+}
+.hc-navbox .nav-on{
+	color: #777;
+	text-decoration: none !important;
+}
+.hc-navbox .nav-off{
+    background: #fccf12 !important;
+    border-radius: 50px;
+    color: #333 !important;
+}
+.hc-navbox a{
+	text-align: center;
+    line-height: 30px;
+    display: block;
+    padding: 0 15px;
+    
+    position:relative;
+}
+.hc-top-up{
+	background: rgba(0, 0, 0, 0);
+    border-color: rgba(255, 255, 255, .4);
+    transition: .5s;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+}
+.hc-logobox{
+	display: inline-block;
+    padding: 10px;
+    border-right: 1px solid rgba(255, 255, 255, .4);
+}
+.hc-logobox img {
+    height: 40px;
+}
+.navbar-right {
+    float: right !important;
+    margin-right: -15px;
+}
+.hc-contact, #mainNav .hc-navbox {
+    height: 30px;
+    overflow: hidden;
+    margin: 15px 25px auto 10px;
+}
+.hc-contact a:nth-child(1), #mainNav .hc-contact a:hover {
+    background: #fccf12 !important;
+    border-radius: 50px;
+    color: #333 !important;
+    transition: .5s;
+}
+.hc-contact a {
+    padding: 0 15px;
+    line-height: 28px;
+    display: inline-block;
+    color: #666;
+    border: 1px solid rgba(255, 255, 255, .8);
+    border-radius: 30px;
+    transition: .5s;
+    text-decoration: none !important;
+}
+.hc-navbox {
+    height: 30px;
+    overflow: hidden;
+    margin: 15px 10px auto 10px;
+    float: right !important;
+}
+.hc-navbox li {
+    transition: .5s;
+    top: 0;
+    padding: 0 5px;
+    float:left;
+    position: relative;
+    display: block;
+}
+/*-----------单屏内样式*/
+.container .hc-fly{
+	width: 45%;
+    height: 100vh;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 1;
+    transition: 1s;
+}
+.hc-fly p:nth-child(1) {
+    height: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: rgba(255, 255, 255, .6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 37%;
+    letter-spacing: 2px;
+}
+.hc-fly p:nth-child(2) {
+    height: 20px;
+    font-size: 28px;
+    text-align: center;
+    color: rgba(255, 255, 255, .9);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 22%;
+}
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.lazyload.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.animate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/淡入淡出.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/JSON.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.shCircleLoader-min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.shCircleLoader.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div class='container'>
+
+			<div class='nav-fixed-top hc-top-up container-fluid '>
+						<a href="javascript:;" class='hc-logobox'><img src="img/logo.png" alt="LOGO" /></a>
+						<div class='navbar-right hc-contact'>
+							<a href="javascript:;" class='hove'>个人中心</a>
+						</div>
+							<ul class='hc-navbox '>
+							<li>
+								<a href="javascript:;">快</a>
+								<a href="javascript:;">ヾ(o◕∀◕)ﾉヾ</a>
+							</li>
+							<li>
+								<a href="javascript:;">看</a>
+								<a href="javascript:;">ლ(⌒▽⌒ლ)</a>
+							</li>
+							<li>
+								<a href="javascript:;">这</a>
+								<a href="javascript:;">ԅ(¯﹃¯ԅ)</a>
+							</li>
+							<li>
+								<a href="javascript:;">里</a>
+								<a href="javascript:;">ヽ(=^･ω･^=)丿</a>
+							</li>
+							</ul>
+							<div class='hc-newbox'>
+								<ul>
+								</ul>
+							</div>
+				</div>
+				<ul class='cont'>
+					<li>
+						<div class='box'>
+							<div class='xbox'></div>
+							<ul class= 'menu'></ul>
+							<p  class= 'p2 ui'></p>
+							<p  class= 'p1 ui'></p>
+						</div>
+					</li>
+					<li>
+						<ul class="polaroids"></ul>
+					</li>
+					<li>
+						<ul class="hand"></ul>
+					</li>
+					<li>
+						<div class='turn'>
+							<p class='ybg ybgoff'></p>
+							<p class='jdg jdgoff'></p>
+							<a href="../冯森jQ节课项目/index.html"><img src="img/yb.png" alt="育碧游戏" /></a>
+							<a href="../京东/index.html"><img src="img/jd.png" alt="京东商场" /></a>
+						</div>
+						<div class='foot'>
+							<p>感谢浏览</p>
+							<p>仅供参考</p>
+							<p>制作者：张金珠</p>
+							<p>合作小组成员:冯森，任骚莹</p>
+						</div>
+					</li>
+				</ul>
+				<ul class='Bmenu'></ul>
+				<ul class='fix'>
+					<div>收藏夹</div>
+				</ul>
+		</div>
+		<div class='mask'><div id='loader'></div></div>
+		<div class='loginmask'>
+			
+		</div>
+		<ul class='log1'>
+				<li>
+					<p class='p1'>LOGIN</p>
+					<input type="text" / class='input'placeholder="登录帐号" >
+					<input type="password"  class='input' placeholder="登录密码"/>
+					<p class='p1 btn'>LOGIN</p>
+				</li>
+				<li>
+					<p class='p1'>SIGN UP</p><img src="img/x.png" alt=""  class='exit'/>
+					<input type="text" / class='input'placeholder="注册帐号" >
+					<input type="password"  class='input' placeholder="注册密码"/>
+					<p class='p1 btn'>SIGN UP</p>
+				</li>
+		</ul>
+		<ul class='log1 log2'></ul>
+	</body>
+	<script src="js/my.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$('#loader').shCircleLoader({
+		    color: "red",
+		    dots: 24,
+		    dotsRadius: 13,
+		    keyframes:
+		       "0%   {background: red;    {prefix}transform: scale(1)}\
+		        20%  {background: orange; {prefix}transform: scale(.4)}\
+		        40%  {background: red;    {prefix}transform: scale(0)}\
+		        50%  {background: red;    {prefix}transform: scale(1)}\
+		        70%  {background: orange; {prefix}transform: scale(.4)}\
+		        90%  {background: red;    {prefix}transform: scale(0)}\
+		        100% {background: red;    {prefix}transform: scale(1)}"
+		});
+		$('.polaroids>li>a>img').lazyload({
+				placeholder:'img/sun.gif', //加载图片之前显示样式
+				event:'mouseover', //使用系统事件加载，如点击时
+				effect:'fadeIn',  //加载完毕后，淡入方式显示
+//				threshold:10,  //距离可见区200px时提前加载
+				container:$(".polaroids")  //用在可滚动容器中，如DIV
+			});
+	</script>
+</html>
