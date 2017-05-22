@@ -609,9 +609,11 @@ $('body').on('click','.hove',function(){
 			if(!$.cookie('username')=='' && !$.cookie('password')==''){
 				$log.css({
 					'top':-$log.height()
+
 				})
 				$loginmask.css({
 					'top':-v.h
+					
 				})
 				$('.navbar-right').empty();
 				$('<span class="user-on">'+$.cookie('username')+'</span>').appendTo($('.navbar-right'));
