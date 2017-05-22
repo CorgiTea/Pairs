@@ -14,22 +14,25 @@
 /*.cont:nth-child(1) li{
 background:radial-gradient(#f64,transparent);
 }*/
-
-	.Bmenu{
-		position:absolute;
-		right:5%;
-		width:10px;
-	}
-	.Bmenu>li{
-		width:20px;
-		height:20px;
-		background-color:rgba(0,0,0,0.6);
-		margin:5px 0;border-radius:50%;
-		cursor:pointer;
-	}
-	.Bmenu .slt{
-		background-color:#fccf12;
-	}
+.op{
+display:none;
+}
+	
+.Bmenu{
+	position:absolute;
+	right:5%;
+	width:10px;
+}
+.Bmenu>li{
+	width:20px;
+	height:20px;
+	background-color:rgba(0,0,0,0.6);
+	margin:5px 0;border-radius:50%;
+	cursor:pointer;
+}
+.Bmenu .slt{
+	background-color:#fccf12;
+}
 /*--------头部*/
 .nav-fixed-top{
 	position: fixed;
